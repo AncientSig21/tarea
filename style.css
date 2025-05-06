@@ -1,0 +1,195 @@
+/* Paleta de colores desde coolors.co */
+:root {
+    --color-primario: #0a9396;
+    --color-secundario: #005f73;
+    --color-terciario: #94d2bd;
+    --color-fondo: #f0f2ef;
+    --color-texto: #001219;  
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+/* HEADER y NAV */
+header {
+    background-color: var(--color-primario);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--color-secundario);
+    border-radius: 5px;
+}
+
+  /* Submenú */
+nav ul ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--color-primario);
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+}
+
+nav ul li:hover > ul {
+    display: flex;
+}
+
+  /* MAIN y SECCIONES */
+main {
+    padding: 30px 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto';
+    position: relative;
+    bottom: 200px;
+}
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+p {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+  /* Grid de productos */
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.producto {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.productos{
+    padding: 30px 100px;
+}
+
+.producto:hover {
+    transform: scale(1.03);
+}
+
+  /* Formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.Somos{
+    text-align: center;
+    position: relative;
+}
+
+.calculo{
+    text-align: center;
+    bottom: 0;
+    color: #0a9396;
+}
+
+button {
+    padding: 10px;
+    background-color: var(--color-secundario);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: var(--color-primario);
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--color-secundario);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative; }
+
+/* Imágenes responsive */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+  /* Animaciones básicas */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+section {
+    animation: fadeIn 1s ease-in;
+}
+
+.form-contacto{
+    place-items: center;
+}
+
+img{
+    width: 100%;
+    height: 350px;
+}

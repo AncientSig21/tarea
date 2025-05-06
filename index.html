@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Land Computer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/sweetalert.min.js"></script>
+</head>
+<body>
+
+    <!-- Música de fondo -->
+    <audio autoplay loop>
+    <source src="/fondoPag.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- HEADER -->
+    <header>
+    <div class="logo">Land Computer</div>
+    <nav>
+        <ul>
+        <li><a href="/index.html">Inicio</a></li>
+        <li><a href="/Nosotros.html">Nosotros</a></li>
+        <li>
+        </li>
+        <li><a href="/calculadora.html">Calculadora</a></li>
+        <li><a href="/Contacto.html">Contacto</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <!-- SECCIONES -->
+    <main>
+    <section class="quienes-somos">
+        <img src="/setup-gammer.jpg" alt="quienes somos">
+        <div>
+        <h1>¿Quiénes somos?</h1>
+        <p class="Somos">Somos una tienda dedicada ala venta de setup gamers, cases y demas productos que te ayudaran a ser un gamer real y entrar en el entorno competitivo o por simple entretenimiento</p>
+        </div>
+    </section>
+
+    <section class="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="grid-productos">
+        <!-- Producto ejemplo -->
+        <div class="producto">
+            <img src="/pd1.jpg" alt="Producto 1">
+            <h3>Combo Pc max pro</h3>
+            <p>Computador de alta gama para diseño o entretenimiento</p>
+            <p>$500.00</p>
+        </div>
+
+        <div class="producto">
+            <img src="/pd2.jpg" alt="Producto 2">
+            <h3>Audifonos Gamer</h3>
+            <p>Audifonos gamer de alta gama</p>
+            <p>$60.00</p>
+        </div>
+
+        <div class="producto">
+            <img src="/pd3.jpg" alt="Producto 3">
+            <h3>Mouse</h3>
+            <p>mouse con variabilidad en dpi, recomendado para juegos</p>
+            <p>$30.00</p>
+        </div>
+
+        <div class="producto">
+            <img src="/pd4.png" alt="Producto 4">
+            <h3>Silla gamer</h3>
+            <p>Silla gamer con soporte para la espalda y para el mantenimiento de la misma</p>
+            <p>$120.00</p>
+        </div>
+
+        <div class="producto">
+            <img src="/pd5.jpg" alt="Producto 5">
+            <h3>Combo teclado</h3>
+            <p>Combo teclado, mouse y mousepad</p>
+            <p>$80.00</p>
+        </div>
+
+        <div class="producto">
+            <img src="/pd6.jpg" alt="Producto 6">
+            <h3>Soporte para audifonos</h3>
+            <p>Soporte para audifonos de alta gama</p>
+            <p>$20.00</p>
+        </div>
+
+        <div class="producto">
+            <img src="/pd7.jpg" alt="Producto 7">
+            <h3>Combo pc media gama</h3>
+            <p>Pc de media gama para diseño grafico</p>
+            <p>$450.00</p>
+        </div>
+
+        <div class="producto">
+            <img src="/pd8.jpeg" alt="Producto 8">
+            <h3>Monitor</h3>
+            <p>Monitor de media gama</p>
+            <p>$90.00</p>
+        </div>
+        </div>
+    </section>
+
+    <section class="form-contacto">
+        <h2>Contáctanos</h2>
+        <form id="formInicio" onsubmit="return enviarFormulario(event)">
+        <input type="text" name="nombre" placeholder="Nombre">
+        <input type="email" name="correo" placeholder="Correo">
+        <textarea name="mensaje" placeholder="Mensaje"></textarea>
+        <button type="submit">Enviar</button>
+        </form>
+    </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+    <p>Dirección: Av Rivas | Tel: 0412-0982-987 | Correo: info@InfolandComputer.com</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

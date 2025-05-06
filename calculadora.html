@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Servicios - Land Computer</title>
+  <link rel="stylesheet" href="/style.css">
+  <title>Land Computer</title>
+</head>
+<body>
+  <header>
+    <div class="logo"></div>
+    <nav>
+      <ul>
+        <li><a href="/index.html">Inicio</a></li>
+        <li><a href="/nosotros/index.html">Nosotros</a></li>
+        <li><a href="/calculadora/index.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="calculo">Calculadora de Servicios-Land Computer</h1>
+    <form id="formCalculadora">
+      <label><input type="checkbox" name="servicio" value="100"> Instalación de Software ($100)</label><br>
+      <label><input type="checkbox" name="servicio" value="150"> Mantenimiento Técnico ($150)</label><br>
+      <label><input type="checkbox" name="servicio" value="200"> Configuración de Red ($200)</label><br>
+      <label><input type="checkbox" name="servicio" value="300"> Desarrollo Web Básico ($300)</label><br><br>
+      <button type="button" onclick="calcularTotal()">Calcular Total</button>
+    </form>
+    <h2>Total: $<span id="resultado">0</span></h2>
+  </main>
+
+  <footer>
+    <p>© 2025 Land Computer. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function calcularTotal() {
+      const checkboxes = document.querySelectorAll('input[name="servicio"]:checked');
+      let total = 0;
+      checkboxes.forEach(cb => total += parseInt(cb.value));
+      document.getElementById("resultado").innerText = total;
+    }
+  </script>
+</body>
+</html>

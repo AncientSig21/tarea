@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - Land Computer</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="js/sweetalert.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">Land Computer</div>
+    <nav>
+      <ul>
+        <li><a href="/index.html">Inicio</a></li>
+        <li><a href="/Nosotros.html">Nosotros</a></li>
+        <li><a href="/calculadora.html">Calculadora</a></li>
+        <li><a href="/Contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contáctanos</h1>
+    <p>Dirección: Av Rivas</p>
+    <p>Teléfono: 0412-0982-987</p>
+    <p>Email: info@InfolandComputer.com</p>
+    <p>Horario: Lunes a Viernes de 9:00 a 18:00</p>
+
+    <form id="formContacto" onsubmit="return enviarFormulario(event)">
+      <input type="text" name="nombre" placeholder="Nombre" required>
+      <input type="text" name="apellido" placeholder="Apellido" required>
+      <input type="tel" name="telefono" placeholder="Teléfono" required>
+      <input type="email" name="correo" placeholder="Correo Electrónico" required>
+      <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar Mensaje</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 Land Computer. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function enviarFormulario(event) {
+      event.preventDefault();
+      swal("¡Mensaje Enviado!", "Gracias por escribirnos. Pronto te responderemos.", "success");
+      document.getElementById("formContacto").reset();
+      return false;
+    }
+  </script>
+</body>
+</html>
